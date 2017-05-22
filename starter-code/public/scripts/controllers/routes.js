@@ -3,7 +3,7 @@
 var app = app || {};
 
 page('/', app.articleController.initIndexPage);
-page('/about', aboutController.index);
+page('/about', app.aboutController.initIndexPage);
 
 //
 page();
