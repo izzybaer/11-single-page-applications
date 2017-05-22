@@ -5,11 +5,9 @@ var app = app || {};
   const aboutController = {};
 
   aboutController.initIndexPage = function(){
-    $(document).ready(function() {
-      $(!'#about').hide();
-    })
-  }
-
+    $('.tab-content').hide();
+    $('#about').show();
+  };
 
   module.aboutController = aboutController;
 })(app);

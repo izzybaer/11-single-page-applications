@@ -6,12 +6,10 @@ var app = app || {};
   const articleController = {};
 
   articleController.initIndexPage = function () {
-    app.Article.all.forEach(a =>
-      $('#articles').append(a.toHtml()));
+    app.Article.fetchAll(app.articleView.initIndexPage)
 
-    $(document).ready(function() {
-      $(!'#articles').hide();
-    })
+    $('.tab-content').show();
+    $('#about').hide();
   };
 
   module.articleController = articleController;
