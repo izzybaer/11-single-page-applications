@@ -2,7 +2,7 @@
 
 var app = app || {};
 
-page('/', articleController.index);
+page('/', app.articleController.initIndexPage);
 page('/about', aboutController.index);
 
 //
